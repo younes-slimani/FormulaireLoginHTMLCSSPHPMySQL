@@ -31,7 +31,7 @@
  if(isset($_SESSION['username'])) 
  { 
      $user = $_SESSION['username'];
-     echo "<br>Bonjour--- $user ----, vous êtes 1111111111111";}
+     echo "<br>Bonjour--- $user ----, vous êtes Connecter Ok";}
  else { 
     header("location:login.php");
 }
