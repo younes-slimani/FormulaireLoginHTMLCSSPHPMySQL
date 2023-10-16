@@ -1,5 +1,6 @@
 body{
-    background: #67BE4B;
+    /* background: #67BE4B; */
+    background: #ccc;
    }
    #container{
     width:400px;
@@ -32,7 +33,8 @@ body{
    
    /* Set a style for all buttons */
    input[type=submit] {
-    background-color: #53af57;
+    /* background-color: #53af57; */
+    background-color: #5e815c;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

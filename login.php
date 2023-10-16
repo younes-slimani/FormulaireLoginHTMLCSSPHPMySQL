@@ -19,11 +19,15 @@
 
  <input type="submit" id='submit' value='LOGIN' >
  <?php
- if(isset($_GET['erreur'])){
- $err = $_GET['erreur'];
- if($err==1 || $err==2)
- echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
- }
+session_start();
+if(isset($_SESSION['username'])) { header('Location: principale.php');}
+else{
+     if(isset($_GET['erreur'])){
+    $err = $_GET['erreur'];
+    if($err==1 || $err==2)
+    echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
+    }
+    }
  ?>
  </form>
  </div>
